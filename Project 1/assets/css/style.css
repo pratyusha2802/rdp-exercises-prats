@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@400;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== nav bar starts here ======== */
+
+.nav-bar {
+  display: flex;
+  padding: 10px 20px 10px 10px;
+  margin: 0 0;
+  justify-content: space-between;
+  height: 3rem;
+}
+
+.logo-nav h1 {
+  display: flex;
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  margin: 5px;
+}
+
+.links-nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 0;
+  padding: 10px;
+}
+
+.links-nav {
+  display: flex;
+  align-items: flex-end;
+  align-items: center;
+}
+
+.links-nav a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.25rem;
+  color: #000;
+}
+
+.links-nav a:visited {
+  color: #000;
+}
+
+/* ====== nav bar ends here ======== */
+
+/* ====== about section starts here ======== */
+
+.about-section {
+  display: flex;
+}
+
+.about-img {
+  width: 50%;
+}
+
+.about-img img {
+  width: 100%;
+}
+
+.about-para {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.about-heading {
+  width: 75%;
+  /* padding: 10px; */
+}
+
+.about-heading h1,
+h3 {
+  margin: 0;
+}
+
+.about-dawn {
+  font-size: 75%;
+}
+
+.about-para p {
+  margin: 10px 0;
+}
+
+.about-btns {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-btn {
+  border: 1px #000 solid;
+  background-color: #fff;
+  height: 2rem;
+  width: 5rem;
+  margin: 5px;
+}
+
+.about-btn a {
+  text-decoration: none;
+  color: #000;
+}
+
+a.about-btn a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+/* ====== about section ends here ======== */
+
+/* ====== blogs section starts here ======== */
+
+.blogs-section {
+  margin: 0;
+}
+
+.blogs-section h2 {
+  font-size: 2rem;
+  padding: 0 17.5rem;
+  margin: 20px 0;
+  font-family: "Amatic SC", cursive;
+}
+
+.blogs {
+  display: flex;
+  justify-content: space-evenly;
+}
+.blog-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: #000 solid 1px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.blog-card h4 {
+  margin: 0;
+}
+
+.blog-card p {
+  margin: 5px;
+}
+
+.blog-card button {
+  background-color: #fff;
+  border: 1px solid #000;
+  margin: 0 5px;
+  width: 8rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.blog-card button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.blog-card button a:visited {
+  text-decoration: none;
+  color: #000;
+}
