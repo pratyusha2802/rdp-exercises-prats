@@ -1,0 +1,27 @@
+.ele {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 4.5rem;
+  margin: 20px 20px 0 20px;
+}
+
+button {
+  background-color: #ffdb58;
+  border: 1px solid #ffdb58;
+  border-radius: 5px;
+  transform: rotate(-15deg) translate(10.5rem, 0.5rem);
+  width: 6rem;
+  height: 2.5rem;
+  color: #000;
+}
+
+p {
+  margin: 0;
+  transform: translate(0, -2rem);
+}
