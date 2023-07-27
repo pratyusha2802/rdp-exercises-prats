@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.card {
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 17rem;
+  width: 15rem;
+  margin: 10px;
+}
+
+img {
+  height: 10rem;
+  width: 14rem;
+  margin: 10px 8px 0 8px;
+}
+
+h4 {
+  margin: 10px;
+  font-size: 1rem;
+}
+
+p {
+  margin: 10px;
+  font-size: 0.75rem;
+}
