@@ -1,0 +1,39 @@
+body {
+  background-color: #000;
+}
+
+.grid {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.square {
+  background-color: salmon;
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* On wider screens like laptops, monitors */
+@media only screen and (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/* On medium screens like tablets */
+@media only screen and (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* On smaller screens like mobile phones */
+@media only screen and (max-width: 320px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
