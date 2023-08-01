@@ -1,169 +1,357 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto:wght@400;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Space+Mono&display=swap");
+/* 
+.grid {
+  width: 90%;
+  max-width: 80rem;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-gap: 1.5rem;
+  z-index: -1001;
+} */
 
 body {
-  margin: 0;
-  padding: 0;
+  background: rgb(46, 46, 51);
+  background: linear-gradient(
+    rgba(46, 46, 51, 1) 0%,
+    rgba(39, 38, 53, 1) 10%,
+    rgba(4, 3, 6, 1) 100%
+  );
+  color: #fff;
 }
 
-/* ====== nav bar starts here ======== */
+/* Header */
 
-.nav-bar {
-  display: flex;
-  padding: 10px 20px 10px 10px;
-  margin: 0 0;
-  justify-content: space-between;
-  height: 3rem;
-}
-
-.logo-nav h1 {
-  display: flex;
-  font-family: "Amatic SC", cursive;
-  font-size: 2rem;
-  margin: 5px;
-}
-
-.links-nav ul {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  margin: 0 0 0 0;
-  padding: 10px;
-}
-
-.links-nav {
-  display: flex;
-  align-items: flex-end;
-  align-items: center;
-}
-
-.links-nav a {
-  text-decoration: none;
-  padding: 10px;
-  font-size: 1.25rem;
-  color: #000;
-}
-
-.links-nav a:visited {
-  color: #000;
-}
-
-/* ====== nav bar ends here ======== */
-
-/* ====== about section starts here ======== */
-
-.about-section {
-  display: flex;
-}
-
-.about-img {
-  width: 50%;
-}
-
-.about-img img {
-  width: 100%;
-}
-
-.about-para {
+.header {
   display: flex;
   flex-direction: column;
-  width: 50%;
   align-items: center;
-  justify-content: center;
+  padding: 10rem 0 0 0;
+  height: 35vw;
+}
+
+.header__span {
+  text-transform: uppercase;
+  font-size: 18vw;
+  font-family: "Glass Antiqua", cursive;
+}
+
+.header__svg {
+  position: relative;
+  top: -35vw;
+  display: inline-block;
+  height: 44vw;
+  z-index: -100;
+}
+
+/* About */
+
+.about {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__span {
+  font-family: "Glass Antiqua", cursive;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.about__span--small {
+  font-family: "Glass Antiqua", cursive;
+  font-size: 1.5rem;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.about__p {
+  display: flex;
+  font-family: "Space Mono", monospace;
+  font-size: 0.75rem;
+}
+
+.about__p--left,
+.about__p--right {
+  margin: 10px;
+  text-align: center;
+}
+
+/* Features */
+
+.features {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__text {
+  font-family: "Space Mono", monospace;
+}
+
+.features__span {
+  font-family: "Glass Antiqua", cursive;
+  font-size: 3rem;
+}
+
+.features__card--odd {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  flex-direction: column;
+  margin: 10px;
+  padding: 15px;
+  justify-items: center;
+}
+
+.features__card--even {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  flex-direction: column;
+  margin: 10px;
+  padding: 15px;
+  justify-items: center;
+}
+
+.features__card--text {
+  display: grid;
+}
+
+.features__card--span {
+  font-family: "Glass Antiqua", cursive;
+  font-size: 1.75rem;
+  margin: 15px 0;
+}
+
+.features__card--p {
+  font-family: "Space Mono", monospace;
+  font-size: 0.8rem;
+}
+
+.features__card--img {
+  height: 10rem;
+  width: 10rem;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+/* FAQ */
+
+.FAQ {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FAQ__span {
+  text-transform: uppercase;
+  font-family: "Glass Antiqua", cursive;
+  font-size: 3rem;
   margin: 10px;
 }
 
-.about-heading {
-  width: 75%;
-  /* padding: 10px; */
+.FAQ__quescard--all {
+  width: 100%;
 }
 
-.about-heading h1,
-h3 {
+.FAQ__ques--all {
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.FAQ__ques--all::-webkit-scrollbar {
+  display: none;
+}
+
+.FAQ__ques {
+  min-width: 200px;
+  height: fit-content;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+.FAQ__ques--span {
+  font-size: 1.25rem;
+  font-family: "Space Mono", monospace;
+  text-align: center;
+}
+
+.FAQ__ques--p {
+  font-size: 0.8rem;
+  font-family: "Space Mono", monospace;
+  text-align: center;
+}
+
+.FAQ_Reach-out {
+  text-align: center;
+}
+
+.FAQ_Reach-out p {
+  font-family: "Space Mono", monospace;
+}
+
+.FAQ_Reach-out button {
+  font-family: "Space Mono", monospace;
+}
+
+/* Join us */
+
+.joinus {
+  margin: 10px;
+}
+
+.joinus__banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.joinus__banner--img {
+  height: 11vw;
+  width: 11vw;
+}
+
+.joinus__banner--h {
+  font-size: 3rem;
+  font-family: "Glass Antiqua", cursive;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.joinus__banner--text {
+  padding: 10px;
+  justify-items: center;
+  font-family: "Space Mono", monospace;
+  text-align: center;
+}
+
+.joinus__buttons {
+  margin: 10px;
+  border: none;
+}
+
+.joinus__signup--btn,
+.joinus__learnmore--btn {
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  height: 4vw;
+  width: 15vw;
+  cursor: pointer;
+  font-family: "Space Mono", monospace;
+}
+
+.joinus__learnmore--btn:hover,
+.joinus__signup--btn:hover {
+  background-color: #aaa;
+}
+
+/* Footer */
+
+.footer {
+  padding: 10px;
   margin: 0;
 }
-
-.about-dawn {
-  font-size: 75%;
+.footer__links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
-.about-para p {
-  margin: 10px 0;
+.footer__about {
+  display: flex;
+  flex-direction: column;
+  font-family: "Space Mono", monospace;
 }
 
-.about-btns {
+.footer__about--links {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Space Mono", monospace;
+}
+
+.footer__about--links:hover {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.footer__about--links:visited {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__help {
+  display: flex;
+  flex-direction: column;
+  font-family: "Space Mono", monospace;
+}
+
+.footer__help--links {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Space Mono", monospace;
+}
+
+.footer__help--links:hover {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.footer__help--links:visited {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__social {
   display: flex;
   flex-direction: row;
 }
 
-.about-btn {
-  border: 1px #000 solid;
-  background-color: #fff;
-  height: 2rem;
-  width: 5rem;
-  margin: 5px;
-}
-
-.about-btn a {
+.footer__social--links {
+  padding: 10px;
+  cursor: pointer;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
-a.about-btn a:visited {
+.footer__social--links:hover {
   text-decoration: none;
-  color: #000;
+  color: #aaa;
 }
 
-/* ====== about section ends here ======== */
-
-/* ====== blogs section starts here ======== */
-
-.blogs-section {
-  margin: 0;
+.footer__social--links:visited {
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.blogs-section h2 {
-  font-size: 2rem;
-  padding: 0 17.5rem;
-  margin: 20px 0;
-  font-family: "Amatic SC", cursive;
+.footer__span {
+  color: rgba(255, 255, 255, 0.25);
 }
 
-.blogs {
+.footer__cr {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.75rem;
+  padding: 20px 225px;
+}
+
+/* Divisions */
+
+.division {
   display: flex;
   justify-content: space-evenly;
 }
-.blog-card {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border: #000 solid 1px;
-  border-radius: 5px;
-  padding: 10px;
-}
 
-.blog-card h4 {
-  margin: 0;
-}
-
-.blog-card p {
-  margin: 5px;
-}
-
-.blog-card button {
-  background-color: #fff;
-  border: 1px solid #000;
-  margin: 0 5px;
-  width: 8rem;
-  height: 2rem;
-  cursor: pointer;
-}
-
-.blog-card button a {
-  text-decoration: none;
-  color: #000;
-}
-
-.blog-card button a:visited {
-  text-decoration: none;
-  color: #000;
+.division img {
+  height: 2.5rem;
+  width: 2.5rem;
 }
