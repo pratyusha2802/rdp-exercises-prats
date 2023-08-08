@@ -1,0 +1,25 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+.btns {
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  height: 5vh;
+  width: 10vh;
+  font-size: 2vh;
+  cursor: pointer;
+}
+
+.btns:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.btns.clicked {
+  background-color: black;
+}
