@@ -1,0 +1,56 @@
+body {
+  background-color: #800080;
+}
+
+.FAQ {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.ques {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.ques-label {
+  background-color: #DDA0DD;
+  border-radius: 20px;
+  padding: 0 10px;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ques-label p {
+    color: #800080;
+    font-size: 1.05rem;
+}
+
+.ques-label button {
+  border: none;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  color: #800080;
+}
+
+.ques-label button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.ques-ans {
+  margin: 10px 20px;
+  color: #555;
+  font-size: 1.05rem;
+}
+
+.ques-ans.hidden {
+  display: none;
+}
