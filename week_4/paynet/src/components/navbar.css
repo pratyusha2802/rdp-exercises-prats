@@ -1,0 +1,30 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+}
+
+.signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.signup a {
+    text-decoration: none;
+    color: black;
+}
